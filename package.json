@@ -1,6 +1,6 @@
 {
   "name": "vscode-json-languageservice",
-  "version": "6.0.0-next.1",
+  "version": "6.0.0-custom.1",
   "description": "Language service for JSON",
   "type": "module",
   "types": "./lib/esm/jsonLanguageService.d.ts",
@@ -13,7 +13,7 @@
   "author": "Microsoft Corporation",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/vscode-json-languageservice"
+    "url": "https://github.com/mohankumarelec/vscode-json-languageservice"
   },
   "license": "MIT",
   "bugs": {

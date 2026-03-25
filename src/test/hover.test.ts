@@ -103,7 +103,7 @@ suite('JSON Hover', () => {
 			assert.deepEqual(result.contents, ['A']);
 		});
 		await testComputeInfo(content, schema, { line: 0, character: 10 }).then((result) => {
-			assert.deepEqual(result.contents, ['B\n\nIt\'s B']);
+			assert.deepEqual(result.contents, ['**B**\n\nIt\'s B']);
 		});
 	});
 
@@ -144,7 +144,7 @@ suite('JSON Hover', () => {
 			assert.deepEqual(result.contents, ['prop2\n\n`false`: wrong']);
 		});
 		await testComputeInfo('{ "prop3": null', schema, { line: 0, character: 12 }).then(result => {
-			assert.deepEqual(result.contents, ['title\n\n*prop3*\n\n`null`: Set to `null`']);
+			assert.deepEqual(result.contents, ['**title**\n\n*prop3*\n\n`null`: Set to `null`']);
 		});
 	});
 
